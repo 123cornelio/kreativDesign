@@ -1,0 +1,146 @@
+.erro{
+    width: 20rem;
+    height: auto;
+    display: flex;
+    place-self: center;
+    justify-content: center;
+    align-items: center;
+    background: rgba(219, 23, 23, 0.89);
+    color: #fff;
+    position: relative;
+    margin-top: 2rem;
+    font-size: 13pt;
+    animation: erroGone 3s  linear forwards;
+}
+@keyframes erroGone{
+    0%{
+        opacity: 1;
+    }
+    89%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+/*************************************/
+.logo{
+    width: 4rem;
+    height: auto;
+    position: absolute;
+    top: .5rem;
+    left: 1rem;
+}
+.logo img{
+    width: 100%;
+    height: auto;
+}
+#form-box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#form{
+    width: 50%;
+    height: 70%;
+    min-height: 30rem;
+    min-width: 20rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 4px 10px rgba(128, 128, 128, 0.637);
+    overflow: hidden;
+}
+h1{
+    color: var(--pri-color);
+}
+#circle{
+    width: 40rem;
+    height: 40rem;
+    position: absolute;
+    background-image: var(--grad);
+    opacity: .4;
+    border-radius: 100%;
+    right: -22rem;
+    top: -5rem;
+}
+.row{
+    width: 60%;
+    height: auto;
+    font-family: ubunto;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+label{
+    width: 6rem;
+    color: var(--pri-color);
+    position: relative;
+    top: 10px; 
+    z-index: 1;
+}
+
+input{
+    position: relative;
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    padding: .2rem;
+    margin: .7rem 0;
+    outline: none;
+    font-family: ubunto;
+    font-size: 11pt;
+    color: rgb(61, 63, 63);
+    border: 1.1px solid #955ca1;
+    border-radius: .2rem;
+}
+.desc{
+    width: 92%;
+    height: auto;
+    text-align: center;
+    position: relative;
+    top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    color: #b909e0;
+}
+a{
+    color: var(--sec-color);
+    text-decoration: underline;
+    font-family: ubuntoMd;
+}
+button{
+    width: 6rem;
+    height: 2rem;
+    color: #fff;
+    font-family: ubunto;
+    border: none;
+    border-radius: .3rem;
+    background-color:var(--sec-color);
+    opacity: .5;
+    transition: ease-in-out .2s;
+}
+button:hover{
+    opacity: 1;
+}
+
+
+@media  (max-width: 650px){
+    #form{
+        width: 95%;
+    }
+    .row{
+        width: 80%;
+        height: auto;
+    }
+}

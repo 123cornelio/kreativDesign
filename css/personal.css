@@ -1,0 +1,129 @@
+header{
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+    position: relative;
+    background: rgba(0, 0, 0, 0.534);
+}
+h1,p{
+    cursor: default;
+}
+header img{
+    width: 100%;
+    height: auto;
+    position: fixed;
+    z-index: -1;
+    background-size: contain;
+}
+#nav-bar{
+    width: 100%;
+    height: 4rem;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    color: #fff;
+    align-items: center;
+}
+.nav-title{
+    cursor: default;
+}
+.nav-menu{
+    font-family: ubuntoMd;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.nav-menu ul li{
+    display: inline;
+    padding: .8rem;
+    margin: .5rem;
+    border-radius: .2rem;
+    transition: all .4s;
+}
+.nav-menu ul li:hover{
+    background: rgba(255, 255, 255, 0.87);
+    color: var(--sec-color);
+}
+/******************contaienr*********************************/
+#container{
+    width: 100%;
+    height: 12rem;
+    position: fixed;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.658);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.content{
+    width: 20%;
+    min-width: 12rem;
+    height: 100%;
+    margin-left: .5rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    place-items: center;
+    color: #fff;
+    background: #f0f;
+}
+.content h1{
+    font-size: 22pt;
+    position: relative;
+    top: .5rem;
+}
+.content p{
+    width: 90%;
+    color: rgb(206, 206, 206);
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    top: 2rem;
+}
+
+
+/*.........................section...............................*/
+
+.section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+.card{
+    width: 12rem;
+    height: 12rem;
+    min-width: 10rem;
+    min-height: 10rem;
+    margin: 3rem 4rem;
+    border-radius: .2rem;
+    box-shadow: 0px 3px 10px rgba(128, 128, 128, 0.493);
+    text-align: center;
+    align-items: center;
+    position: relative;
+}
+.card h1{
+    font-size: 22pt;
+    color: var(--ease-color);
+    position: relative;
+    top: .5rem;
+}
+.card p{
+    /* font-size: 14pt; */
+    width: 90%;
+    color: #333;
+    justify-content: center;
+    text-align: start;
+    position: relative;
+    left: 1rem;
+    top: 2rem;
+}

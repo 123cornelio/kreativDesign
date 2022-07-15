@@ -1,0 +1,623 @@
+#all{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+}
+.side-bar{
+    width: 3.5rem;
+    min-width: 3.5rem;
+    height: 100%;
+    background: rgba(251, 252, 255, 0.993);
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    align-items: center;
+    z-index: 11;
+    border-right: 1px solid #eee;
+}
+.item{
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+.selected{
+    background-color:rgba(162, 213, 247, 0.993);
+    transition: ease-in-out .2s;
+}
+.selected:hover{
+    background-color:rgba(255, 255, 255, 0.993);
+}
+.item-img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    place-items: center;
+    transition: .2s ease-in-out;
+    z-index: 0;
+}
+.item-img img{
+    width: 40%;
+    filter: invert();
+    opacity: .5;
+    position: relative;
+    transition: .2s ease-in-out;
+}
+.item:nth-child(6){
+    position: relative;
+    margin-top: 25rem;
+}
+.item label{
+    min-width: 3.5rem;
+    text-align: center;
+    position: absolute;
+    opacity: 0;
+    color: #fff;
+    left: 0rem;
+    transition: .2s ease-in-out;
+}
+.item:hover  label{
+    position: absolute;
+    opacity: 1;
+    left: 3.7rem;
+}
+
+.item:nth-child(1):hover .item-img{
+    background: rgba(26, 126, 240, 0.993);
+}
+.item:nth-child(2):hover .item-img{
+    background: rgb(8, 219, 226);
+}
+.item:nth-child(3):hover .item-img{
+    background: rgb(66, 113, 243);
+}
+.item:nth-child(4):hover .item-img{
+    background: rgb(2, 24, 124);
+}
+.item:nth-child(5):hover .item-img{
+    background: rgb(144, 194, 8);
+}
+.item:nth-child(6):hover .item-img{
+    background: rgb(214, 87, 3);
+} 
+.item:nth-child(7):hover .item-img{
+    background: rgb(214, 3, 55);
+} 
+.item:hover .item-img{
+    background-color:rgba(26, 126, 240, 0.993); 
+    position: absolute;
+    left: .4rem;  
+    height: 90%; 
+    top: 5%;
+    border-radius: 5rem;
+    padding-right: 5.2rem;
+}
+.item:hover  .item-img img{
+    filter: invert(0);
+    opacity: 1;
+}
+/*********************up content******************/
+.container{
+    width:100%;
+    height: auto;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    padding: .5rem;
+}
+.up-content{
+    min-height: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: .5rem;
+    border-bottom: 1px solid #eee;
+}
+.adm-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+    cursor: pointer;
+}
+.adm-info span{
+    align-items: center;
+    display: flex;
+    margin: .3rem;
+    position: relative;
+    /* left: -14rem; */
+}
+.adm-info span img{
+    width: 1.8rem;
+    height: 1.8rem;
+    margin: .5rem;
+}
+.adm-info span label{
+    position: absolute;
+    left: 2.2rem;
+    top: -.1rem;
+    font-size: 10pt;
+    background-color: rgba(100, 100, 100, 0.596);
+    padding: .2rem;
+    border-radius: 10%;
+    color: #fff;
+    opacity: 0;
+    transition: ease-out .2s;
+}
+.adm-info span img:hover ~ label{
+    animation: hover ease-in-out .5s forwards;
+    transition: ease-out .2s;
+    z-index: 1;
+}
+.logo{
+    width: 2rem;
+    height: auto;
+    position: relative;
+}
+.logo img{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+/************************bottom content*************************/
+.bottom-content{
+    text-align: center;
+    font-size: 14pt;
+}
+
+.options{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.options a:nth-child(1){
+    border-left: .4rem solid rgb(8, 219, 226);
+    color: rgb(8, 219, 226);
+}
+.options a:nth-child(2){
+    border-left: .4rem solid rgb(66, 113, 243);
+    color: rgb(66, 113, 243);
+}
+.options a:nth-child(3){
+    border-left: .4rem solid rgb(2, 24, 124);
+    color: rgb(2, 24, 124);
+}
+.options a:nth-child(4){
+    border-left: .4rem solid rgb(144, 194, 8);
+    color: rgb(144, 194, 8);
+}
+/********************************************/
+/********************************************/
+
+.options .option:nth-child(1) hr{
+    background-color:rgb(8, 219, 226);
+}
+.options .option:nth-child(2) hr{
+   background-color:rgb(66, 113, 243);
+}
+.options .option:nth-child(3) hr{
+    background-color:  rgb(2, 24, 124);
+}
+.options .option:nth-child(4) hr{
+    background-color: rgb(144, 194, 8);
+}
+.option{
+    height: 8rem;
+    min-width: 12rem;
+    width: 20%;
+    margin: 1rem .6rem;
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    justify-content: space-around;
+    background: #fff;
+    color: #555;
+    border-radius: .2rem;
+    box-shadow: 0 4px 2px 4px rgba(238, 238, 238, 0.199);
+    font-size: 12pt;
+    position: relative;
+    transition: .2s ease-in-out;
+}
+
+.info{
+    text-align: right;
+    position: relative;
+    left: 1rem;
+    text-align: start;
+} 
+.info p{
+    margin-top: 1rem;
+    color: #888;
+    font-size: 10pt;
+    display: flex;
+    flex-wrap: wrap;
+}
+.total{
+    color: #555;
+}
+.option:hover{
+    position: relative;
+    box-shadow: 0px 5px 15px #ddd;
+}
+.option:hover img{
+   transform: rotateY(180deg);
+}
+.option img{
+    width: 2rem;
+    height: auto;
+    display: flex;
+    place-content:center ;
+    transition: .2s ease-in;
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    filter: invert(2);
+    opacity: .3;
+}
+.option hr{
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+    position: relative;
+    top: 1.7rem;
+    height: 2px;
+    border: none;
+}
+
+/****************************** Table Results ***************************/
+.bottom-content{
+    text-align: center;
+    font-size: 14pt;
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    color: #444;
+}
+/****************************** Table Results Style***************************/
+
+
+table{
+    width: 98%;
+    height: auto;
+    position: relative;
+    margin: 0 auto;
+    font-size: 12pt;
+}
+thead{
+    width: 100%;
+    height: 2.5rem;
+    color: #fff;
+}
+.color1{
+    background-color:rgb(8, 219, 226);
+}
+.color2{
+    background-color:rgb(66, 113, 243);
+}
+.color3{
+    background-color:rgb(2, 24, 124);
+}
+.color4{
+    background-color: rgb(144, 194, 8);
+}
+th{
+    margin: 10px;
+    /* background-color: rgba(26, 126, 240, 0.993); */
+    border-radius: .2rem;
+    width: 10rem;
+}
+tr{
+    height: 2.5rem;
+    min-height: 2.5rem;
+}
+td{
+    color: rgba(12, 12, 12, 0.678);
+    height: auto;
+    text-align: justify;
+    letter-spacing: .05rem;
+    padding-left: 1rem;
+    cursor: default;
+}
+tbody tr:hover{
+    background-color: rgba(225, 235, 248, 0.986);
+}
+.action{
+    display: flex;
+    height: 2.5rem;
+    justify-content: space-evenly;
+    left: -.4rem;
+    align-items: center;
+}
+.btn-link{
+    cursor: pointer;
+}
+.btn-link img{
+    width: 80%;
+    height: auto;
+}
+.white{
+    color: #fff;
+    font-size: 16pt;
+}
+.green{
+    background-color: rgb(68, 226, 63);
+}
+.avocadoGreen{
+    background-color: rgb(69, 148, 5);
+}
+.lightGreen{
+    background-color: rgb(97, 255, 92);
+}
+.red{
+    background-color: rgb(226, 63, 63);
+}
+.blue{
+    background-color: rgb(63, 174, 226);
+}
+.orange{
+    background-color: rgb(252, 195, 7);
+}
+.btn-link label{
+    position: absolute;
+    left: 2.2rem;
+    top: -.1rem;
+    font-size: 10pt;
+    background-color: rgba(100, 100, 100, 0.596);
+    padding: .2rem;
+    border-radius: 10%;
+    color: #fff;
+    opacity: 0;
+    transition: ease-out .2s;
+}
+.btn-link:hover label{
+    animation: hover ease-in-out 1s forwards;
+    transition: ease-out .2s;
+    z-index: -1;
+}
+@keyframes hover{
+    0%{
+        opacity: 0;
+    }
+    90%{
+        opacity: 0;
+        
+    }
+    100%{
+        opacity: 1;
+        z-index: 1;
+    }
+}
+.btn-add{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12pt;
+    width: 10rem;
+    height: 2rem;
+    padding: .3rem;
+    color: rgb(5, 140, 202);
+    border-radius:2rem;
+    background: #fff;
+    border: 1px solid rgb(5, 140, 202);
+    margin-top: 3rem;
+    place-self: center;
+    transition: ease-out .1s;
+    cursor: default;
+    transition: ease-in-out .2s;
+}
+.btn-add:hover{
+    background-color: rgb(5, 140, 202);
+    color: #fff;
+}
+.modal{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 46, 46, 0.329);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    z-index: 11;
+}
+.showModal{
+    display: flex;
+}
+.form-modal{
+    width: 30rem;
+    height: 35rem;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.form-modal{
+    border-radius: .4rem;
+}
+.form-modal label{
+    position: relative;
+    left: -12rem;
+    color: rgb(5, 140, 202);
+    transform: translateX(50%);
+}
+.form-modal h2{
+    color: rgb(5, 140, 202);
+    position: relative;
+    top: -4rem;
+}   
+.form-modal .btn-close{
+    position: absolute;
+    right: .5rem;
+    top: .5rem;
+    cursor: pointer;
+    color: #555;
+    font-size: 16pt;
+}
+.form-modal input{
+    width: 80%;
+    height: 2rem;
+    border: none;
+    border-bottom: 1px solid rgb(5, 140, 202);
+    font-family: ubunto;
+    color: rgb(4, 26, 36);
+    font-size: 10pt;
+    margin-bottom: 2rem;
+    outline: none;
+    padding: 0 .5rem;
+}
+.form-modal button{
+    width: 8rem;
+    height: 2.5rem;
+    padding: .3rem;
+    border-radius: 10rem;
+    border: 1px solid rgb(5, 140, 202);
+    background-color: #fff;
+    color: rgb(5, 140, 202);
+    margin-top: 2rem;
+    font-size: 11pt;
+    transition: ease-in-out .2s;
+}
+.form-modal button:hover{
+    background-color: rgb(5, 140, 202);
+    color: #fff;
+}
+
+
+
+
+
+
+.btn-link{
+    width: 1.3rem;
+    height: 1.3rem;
+    border-radius: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .3rem;
+}
+
+.boxBg{
+    width: 100%;
+    height: 30rem;
+    position: absolute;
+    right: .2rem;
+    top: 0;
+    background: rgba(255, 255, 255, 0.274);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /* z-index: -1; */
+}
+.msgBox{
+    width: 22rem;
+    height: 10rem;
+    background-color: #fff;
+    box-shadow: 0px 4px 12px #777;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+}
+h5{
+    font-size: 12pt;
+    width: 90%;
+    text-align: center;
+    color: #444;
+}
+.btns a,
+.btns button{
+    padding: .6rem 1rem;
+    position: relative;
+    margin: .2rem;
+    border-radius: 1.5rem;
+    font-size: 11pt;
+    font-family: ubunto;
+}
+.accepted{
+    font-size: 19pt;
+    color: rgb(61, 156, 6);
+}
+.btns{
+    display: flex;
+    position: relative;
+    top: 1.8rem;
+}
+.yesBtn{
+    background-color: rgb(226, 32, 64);
+    transition: ease-in-out .1s;
+    color: #fff;
+    border: 1px solid transparent;
+}
+.yesBtnB{
+    background-color: rgb(61, 156, 6);
+    transition: ease-in-out .1s;
+    color: #fff;
+    border: 1px solid transparent;
+}
+.noBtn{
+    background: #fff;
+    color: rgb(105, 103, 103);
+    border: 1px solid rgb(105, 103, 103);
+    
+}
+.yesBtn:hover{
+    background: #fff;
+    color: rgb(226, 32, 64);
+    border: 1px solid rgb(226, 32, 64);
+}
+.yesBtnB:hover{
+    background: #fff;
+    color: rgb(61, 156, 6);
+    border: 1px solid rgb(61, 156, 6);
+}
+.noBtn:hover{
+    background-color: rgb(105, 103, 103);
+    color: #fff;
+    transition: ease-in-out .1s;
+}
+
+.delForm{
+    width: 0;
+    height: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.delForm button{
+    max-width: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: none;
+}
+.delForm buttun:hover{
+    background-color: lightcoral;
+}
+.delForm button img{
+    position: absolute;
+    right: .5rem;
+    top: .5rem;
+    width: 1rem;
+}

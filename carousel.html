@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <title>Auto typing | Eng Ed</title>
+    <style type="text/css">
+      .text-js {
+        opacity: 0; 
+        color: black;
+        height: auto; 
+        font-family: lucida sans;
+      }
+    </style>
+  </head>
+  <body onload="fire()" style="background-color: white">
+<section style="margin-top: 10vh; padding-left: 15vw" class="pb-5">
+    <div class="container pb-md-3">
+        <div class="text-center">
+            <div class="row">
+              <div class="col-md-5" style="text-align: left">
+                <h3 class="mb-4 title" style="color: red">Q & A&nbsp;</h3>
+                <div class="type-js"><div class="text-js">
+                  Is this Eng-Ed?
+                </div>
+                </div>
+                <br>
+                <div class="type-js-ii"><div class="text-js">
+                  Yes, why?
+                </div>
+                </div><br>                
+                <div class="type-js-iii"><div class="text-js">Tell me more about the community.
+                </div>
+                </div><br>
+                <div class="type-js-iv"><div class="text-js">It is, I mean, it is that--
+                </div>
+                </div><br>                
+                <div class="type-js-v"><div class="text-js">Could you please talk faster?
+                </div>
+                </div>                
+              </div>
+              <div class="col-md-7">
+              <div class="row">
+              <div class="col-lg-6 mx-lg-auto col-md-12">
+                <img src="img/backgroud.png" alt="" class="img-fluid mt-lg-5 mt-3">
+              </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+
+<script>
+//The function for auto-typing
+function autoType(elementClass, typingSpeed, timeout) {
+//The target class where the auto-typing will be invoked
+    var ourClass = $(elementClass);
+    //setting the CSS styling for the target class
+    ourClass.css({
+      "position": "relative",
+      "display": "inline-block"
+    });
+    //looking for `text-js` containing the text that will be typed out
+    ourClass = ourClass.find(".text-js");
+    //remove any trailing spaces
+    var text = ourClass.text().trim().split('');
+    //storing the length of text
+    var amntOfChars = text.length;
+    //variable to store the text to display
+    var newString = "";
+    
+    setTimeout(function () {
+    //changing the text visibilty to visible
+      ourClass.css("opacity", 1);
+      //clearing out the text temporarily
+      ourClass.text("");
+      //The IIFE where the characters are displayed after computing the typing speed
+      for (var i = 0; i < amntOfChars; i++) {
+        (function (i, char) {
+          setTimeout(function () {
+            newString += char;
+            ourClass.text(newString);
+          }, i * typingSpeed);
+        })(i, text[i]);
+      }
+    }, timeout);
+  }
+
+function fire(){
+//calling the functions with respective arguments
+    autoType(".type-js", 85, 1000);
+    autoType(".type-js-ii", 200, 2500);  
+    autoType(".type-js-iii", 85, 5800);  
+    autoType(".type-js-iv", 200, 9300);   
+    autoType(".type-js-v", 85, 15000);    
+}
+</script>
+</html>

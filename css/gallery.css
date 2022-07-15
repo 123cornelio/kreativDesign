@@ -1,0 +1,511 @@
+#nav-bar{
+    width: 100%;
+    height: 4rem;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+    flex-direction: row;
+    color: rgb(236, 9, 115);
+    align-items: center;
+    z-index: 111;
+    background-color: #fff;
+    box-shadow: 0 2px 8px #ddd;
+}
+
+.nav-color{
+    height: 3rem;
+    background: #fff;
+    color: rgb(236, 9, 115);
+    transition: ease-in-out .2s;
+    box-shadow: 0 2px 4px rgba(153, 153, 153, 0.459);
+}
+.nav-title{
+    cursor: default;
+}
+.nav-menu-mobile{
+    display: none;
+}
+#nav-bar .media{
+    display: none;
+}
+.nav-title h1{
+    font-size: 14pt;
+}
+.nav-menu{
+    font-family: ubuntoMd;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.nav-menu .list{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+.nav-menu ul li{
+    padding: .8rem;
+    margin: .5rem;
+    border-radius: .2rem;
+    transition: all .4s;
+    
+}
+.nav-menu ul li:hover{
+    background: rgb(236, 9, 115);
+    color: #fff;
+}
+/***************************************/
+/*               header                */
+/***************************************/
+#header{
+    display: flex;
+    width: 100%;
+    height: 20rem;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#welcome{
+    width: 90%;
+    height: auto;
+    display: flex;
+    color: #fff; 
+    flex-direction: column;
+    text-align: left;
+}
+.wel-title{
+    margin-bottom: 1rem;
+    font-size: 15pt;
+    position: relative;
+    top: -2rem;
+    color: rgb(236, 9, 115);
+}
+.wel-desc{
+    width: 50%;
+    min-width: 14rem;
+}
+/***************************************/
+/*               gallery               */
+/***************************************/
+.gallery-container{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 1rem auto;
+}
+.gallery-content{
+    width: 100%;
+    height: auto;
+    margin: .5rem auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+}
+.content{
+    width: 23%;
+    min-width: 12rem;
+    height: 14rem;
+    margin: .1rem;
+    position: relative;
+    text-align: center;
+    transition: ease-in-out .5s;
+}
+/********************************************************/
+/***********     gallery images (1)    ******************/
+/********************************************************/
+.gallery-content:nth-child(1) .content:nth-child(1){
+    background-image: url("../img02/ft05.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: ease-in-out .5s;
+}
+.gallery-content:nth-child(1) .content:nth-child(2){
+    background-image: url("../img02/ft08.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: ease-in-out .5s;
+}
+.gallery-content:nth-child(1) .content:nth-child(3){
+    background-image: url("../img02/card03.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: ease-in-out .5s;
+}
+.gallery-content:nth-child(1) .content:nth-child(4){
+    background-image: url("../img02/ft01.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: ease-in-out .5s;
+}
+/********************************************************/
+/***********     gallery images (2)    ******************/
+/********************************************************/
+.gallery-content:nth-child(2) .content:nth-child(1){
+    background-image: url("../img02/logo01.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: ease-in-out .5s;
+}
+.gallery-content:nth-child(2) .content:nth-child(2){
+    background-image: url("../img02/logo02.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: ease-in-out .5s;
+}
+.gallery-content:nth-child(2) .content:nth-child(3){
+    background-image: url("../img02/ft07.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: ease-in-out .5s;
+}
+.gallery-content:nth-child(2) .content:nth-child(4){
+    background-image: url("../img02/logo03.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: ease-in-out .5s;
+}
+/********************************************************/
+/***********     gallery images (3)    ******************/
+/********************************************************/
+.gallery-content:nth-child(3) .content:nth-child(1){
+    background-image: url("../img02/Gelada.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: ease-in-out .5s;
+}
+.gallery-content:nth-child(3) .content:nth-child(2){
+    background-image: url("../img02/card04.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: ease-in-out .5s;
+}
+.gallery-content:nth-child(3) .content:nth-child(3){
+    background-image: url("../img02/card01.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: ease-in-out .5s;
+}
+.gallery-content:nth-child(3) .content:nth-child(4){
+    background-image: url("../img02/card02.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: ease-in-out .5s;
+}
+/********************************************************/
+/***********     gallery images (4)    ******************/
+/********************************************************/
+.gallery-content:nth-child(4) .content:nth-child(1){
+    background-image: url("../img02/Mariya.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: ease-in-out .5s;
+}
+.gallery-content:nth-child(4) .content:nth-child(2){
+    background-image: url("../img02/flyer01.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: ease-in-out .5s;
+}
+.gallery-content:nth-child(4) .content:nth-child(3){
+    background-image: url("../img02/flyer02.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: ease-in-out .5s;
+}
+.gallery-content:nth-child(4) .content:nth-child(4){
+    background-image: url("../img02/flyer07.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: ease-in-out .5s;
+}
+/********************************************************/
+/***********     gallery images (5)    ******************/
+/********************************************************/
+.gallery-content:nth-child(5) .content:nth-child(1){
+    background-image: url("../img02/jaco-Car-wash-02-desing-white.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: ease-in-out .5s;
+}
+.gallery-content:nth-child(5) .content:nth-child(2){
+    background-image: url("../img02/logo04.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: ease-in-out .5s;
+}
+.gallery-content:nth-child(5) .content:nth-child(3){
+    background-image: url("../img02/flyer04.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: ease-in-out .5s;
+}
+.gallery-content:nth-child(5) .content:nth-child(4){
+    background-image: url("../img02/MAriyah_logo.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: ease-in-out .5s;
+}
+/********************************************************/
+/***********     gallery images (6)    ******************/
+/********************************************************/
+.gallery-content:nth-child(6) .content:nth-child(1){
+    background-image: url("../img02/ARC.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: ease-in-out .5s;
+}
+.gallery-content:nth-child(6) .content:nth-child(2){
+    background-image: url("../img02/SL-Taxi-ap.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: ease-in-out .5s;
+}
+.gallery-content:nth-child(6) .content:nth-child(3){
+    background-image: url("../img02/ARC2.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: ease-in-out .5s;
+}
+.gallery-content:nth-child(6) .content:nth-child(4){
+    background-image: url("../img02/wiwita_Logo.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: ease-in-out .5s;
+}
+/******************************************************************/
+.content:hover label{
+    padding: 1.2rem 0;
+    opacity: 1;
+    bottom: 0;
+    background-image: linear-gradient(360deg,rgba(9,9,9,.9),40%,rgba(0, 0, 0, 0));
+}
+/* .gallery-content:nth-child(2) .content:hover{
+    background-size: contain;
+} */
+
+
+/***************************************/
+/*               footer                */
+/***************************************/
+
+footer{
+    width: 100%;
+    height: 20rem;
+    position:  relative;
+    bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(90, 4, 44);
+    color: #fff;
+}
+.cnt-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    line-height: 1rem;
+}
+.f-content{
+    width: 20%;
+    min-width: 10rem;
+    height: auto;
+    margin: 0 .6rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+.f-info{
+    width: 100%;
+    min-width: 10rem;
+    height: auto;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.f-content a{
+    padding: .3rem;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+
+
+/***************************************/
+/*               Media                 */
+/***************************************/
+
+@media (max-width: 560px){
+    #nav-bar{
+        height: 2.8rem;
+    }
+    .gadgets{
+        width:15rem;
+        min-width: 7.5rem;
+        height: 6rem;
+        background-color: rgb(236, 9, 115);
+        transform: skewX(50deg);
+        position: absolute;
+        left: -6rem;
+        top: -2rem;
+        z-index: -1;
+    }
+    .gallery-content{
+        width: 100%;
+    }
+    .gallery-content .content{
+        width: 90%;
+    }
+    #nav-bar .media{
+        display: block;
+    }
+    .nav-menu{
+        display: none;  
+    }
+    .nav-menu-mobile{
+        position: fixed;
+        width: 100%;
+        height: auto;
+        z-index: -1;
+        display: block;
+        background: rgb(255, 255, 255);
+        box-shadow: 0 2px 1px #999; 
+    }
+    .hide-mobile{
+        display: none;
+        z-index: -1;
+    }
+    .show-mobile{
+        display: block;
+        animation: show linear .2s forwards;
+    }
+    @keyframes show{
+        0%{
+            top: -10rem;
+            z-index: -1;
+        }
+        100%{
+            top: 2.8rem;
+            z-index: 1111;
+        }
+     }
+    }
+    .nav-menu-mobile .list{
+        width: 90%;
+        height: auto;
+        font-size: 10pt;
+        color: rgb(236, 9, 115);
+        margin: 0 auto;
+    }
+    .nav-menu-mobile .list a li{
+        width: 90%;
+        padding: 1rem;
+        margin: .4rem auto;
+    }
+    .nav-title{
+        position: absolute;
+        left: 0;
+    }
+    .nav-title h1{
+        position: relative;
+        left: 1rem;
+    }
+    .media{
+        width: 2.3rem;
+        height: 2rem;
+        position: absolute;
+        right: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: .6rem;
+     }
+     .ln1{
+        width: 100%;
+         height: .2rem;
+         background-color: rgb(236, 9, 115);
+         margin-bottom: .5rem;
+         border-radius: 1rem;
+     }
+     .ln2{
+        width: 100%;
+         height: .2rem;
+         background-color: rgb(236, 9, 115);
+         margin-bottom: .5rem;
+         border-radius: 1rem;
+     }
+     .ln3{
+        width: 100%;
+         height: .2rem;
+         background-color: rgb(236, 9, 115);
+         margin-bottom: .5rem;
+         border-radius: 1rem;
+     }
+     .line1{
+         animation: line .1s forwards;
+     }
+     .line3{
+        animation: lineRev .1s forwards;
+    }
+    .line2{
+        display: none;
+    }
+    @keyframes line {
+        0%{
+         position: absolute;
+         transform: rotate(0deg);
+        }
+        100%{
+         position: absolute;
+         margin-top: .6rem;
+         transform: rotate(-45deg);
+        }
+    }
+    @keyframes lineRev {
+     0%{
+      position: absolute;
+      transform: rotate(0deg);
+     }
+     100%{
+      position: absolute;
+      margin-top: .6rem;
+      transform: rotate(45deg);
+     }
+    }
+    

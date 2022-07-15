@@ -1,0 +1,207 @@
+
+.erro{
+    width: 20rem;
+    height: auto;
+    display: flex;
+    place-self: center;
+    justify-content: center;
+    align-items: center;
+    background: rgba(219, 23, 23, 0.89);
+    color: #fff;
+    position: relative;
+    margin-top: 2rem;
+    font-size: 13pt;
+    animation: erroGone 3s  linear forwards;
+}
+@keyframes erroGone{
+    0%{
+        opacity: 1;
+    }
+    89%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+/****************************/
+.perfilContainer{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.527);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 11;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    
+}
+.close{
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    background-color: rgba(255, 255, 255, 0);
+    right: 0rem;
+    top: 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: .3rem;
+    transition: .1s ease-in-out;
+}
+.close:hover{
+    background-color: rgba(190, 10, 10, 0.897);
+}
+.close:hover .closeImg{
+    filter: invert(0);
+    opacity: 1;
+}
+.closeImg{
+    width: 1rem;
+    height: auto;
+    position: relative;
+    filter: invert(1);
+    opacity: .6;
+    transition: .1s ease-in-out;
+}
+.perfilShow{
+    display: flex;
+    animation: perfil .4s linear forwards;
+}
+@keyframes perfil{
+    0%{
+      display: none;
+      opacity: 0; 
+    }
+    5%{
+      display: flex;
+      opacity: .5;  
+    }
+    100%{
+      display: flex;
+      opacity: 1;
+    }
+}
+.perfil{
+    width: 25rem;
+    height: 30rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: .6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.per_top{
+    width: 92%;
+    height: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.per_img{
+    width: 8rem;
+    height: auto;
+    position: relative;
+    /* background: #000; */
+}
+.per_img img{
+    width: 100%;
+}
+.per_name{
+    font-size: 18pt;
+    color: #444;
+}
+.perfil n{
+    font-size: 12pt;
+    color: #888;
+}
+.per_middle{
+    width: 90%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.per_inf{
+    font-size: 16pt;
+    text-align: start;
+    color: #444;
+    position: relative;
+    left: 15%;
+    margin: .5rem 0;
+}
+.per_middle n{
+    font-size: 12pt;
+    color: #888;
+    position: absolute;
+    left: -25%;
+    text-align: start;
+    margin: .2rem 2rem;
+}
+
+
+/*************************************************/
+/*          relatorio                               */
+/**************************************************/
+
+.relatorio{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6rem;
+}
+.result{
+    width: 20%;
+    min-width: 18rem;
+    height: 12rem;
+    background-color: rgb(42, 119, 233);
+    position: relative;
+    margin: 1rem;
+    border-radius: .3rem;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgb(231, 230, 230);
+}
+.result_name{
+    width: 90%;
+    text-align: left;
+    padding: .5rem 0;
+    position: relative;
+    left: .3rem;
+    color: rgb(255, 255, 255);
+    font-size: 11.5pt;
+}
+.result_desc{
+    width: 96%;
+    height: 100%;
+    text-align: left;
+    background-color: #fffffff7;
+    padding: 1% 4%;
+    font-size: 10pt;
+}
+.result_date{
+    text-align: left;
+    padding: 1% 4%;
+    font-size: 10pt;
+    position: absolute;
+    top: 8rem;
+}
+.result_delete{
+    font-size: 14pt;
+    position: absolute;
+    color: deeppink;
+    top: 10rem;
+    right: .6rem;
+}
+
+
